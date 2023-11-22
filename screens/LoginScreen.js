@@ -21,18 +21,6 @@ const LoginScreen = () => {
         return unsubscribe
     }, []);
 
-    // useEffect(() => {
-    //     const unsubscribe = onAuthStateChanged(auth, (user) => {
-    //       setCurrentUser(user);
-    //       setLoading(false);
-    //     });
-    
-    //     return unsubscribe; // Unsubscribe on unmount
-    //   }, []);
-    
-    //   if (loading) {
-    //     return null; // or a loading indicator
-    //   }
 
     const handleSignup = () => {
         createUserWithEmailAndPassword(auth, email, password)

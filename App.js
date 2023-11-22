@@ -34,7 +34,7 @@ export default function App() {
         {currentUser ? (
           <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
         ) : (
-        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} options={{headerShown: false}}/>
         )}
       </Stack.Navigator>
     </NavigationContainer>
